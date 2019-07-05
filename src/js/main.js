@@ -1,6 +1,7 @@
-"use strict";
+
 
 import moment from 'moment';
+import { setInterval } from 'timers';
 
 console.log(moment().format('MMMM Do YYYY, h:mm:ss a'))
 
@@ -76,3 +77,11 @@ $doc.on('scroll', function () {
                
             });
             });
+
+
+        
+            
+            
+            
+            
+            
