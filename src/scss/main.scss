@@ -23,39 +23,46 @@ body {
   background-size: cover;
   background-position: 50% 50%;
   overflow: hidden;
+
+  &__logo {
+    text-align: center;
+    margin-top: 60px;
+    text-shadow: 1px 1px #fff;
+    font-size: 45px;
+    font-family: 'Josefin Slab', serif;
+  }
+
+  &__button {
+    border: 1px #ffffff solid;
+    height: 50px;
+    width: 80px;
+    margin: 0 auto;
+    background: black;
+    opacity: 0.7;
+    color: #fff;
+    font-family: 'Josefin Slab', serif;
+    border-radius: 2px;
+    font-size: 24px;
+    box-shadow: 1px 1px #fff;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__holder {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
-.start__logo {
-  text-align: center;
-  margin-top: 60px;
-  text-shadow: 1px 1px #fff;
-  font-size: 45px;
-  font-family: 'Josefin Slab', serif;
-}
 
-.start__button {
-  border: 1px #ffffff solid;
-  height: 50px;
-  width: 80px;
-  margin: 0 auto;
-  background: black;
-  opacity: 0.7;
-  color: #fff;
-  font-family: 'Josefin Slab', serif;
-  border-radius: 2px;
-  font-size: 24px;
-  box-shadow: 1px 1px #fff;
-  display: flex;
-  justify-content: center;
-}
 
-.start__holder {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
+
+
+
 
 .navbar {
   min-height: 100vh;
@@ -63,142 +70,155 @@ body {
   background-size: cover;
   background-position: 50% 50%;
   z-index: 9999999;
+
+  &__ul {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 3em 0 3em;
+    list-style-type: none;
+    min-height: 100vh;
+    
+    justify-content: space-around;
+    
+    align-items: center;
+    align-content: space-around;
+    font-size: 28px;
+    overflow: hidden;
+  }
+
+  &__li {
+    margin: 0 40px;
+  }
+  
+  &__a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 2px #000;
+    max-height: 200px;
+  }
+  
+  &__a:hover {
+    color: #fefefe;
+    cursor: pointer;
+  }
+
 }
 
-.navbar__ul {
-  margin: auto;
-  padding: 0 3em 0 3em;
-  list-style-type: none;
-  min-height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  align-content: space-around;
-  font-size: 28px;
-  overflow: hidden;
+
+
+.mainbio {
+  @include mainflex;
+  &__img {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  &__bio {
+    width: 80%;
+  }
+  &__img {
+    border-radius: 50%;
+  }
 }
 
-.navbar__li {
-  margin: 0 40px;
+.mainexp {
+  @include mainflex;
+  &__img {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  &__exp {
+    width: 80%;
+  }
+  &__img {
+    border-radius: 50%;
+  }
 }
 
-.navbar__a {
-  text-decoration: none;
-  color: #fff;
-  font-family: 'Prompt', sans-serif;
-  font-weight: 600;
-  text-shadow: 2px 2px #000;
-  max-height: 200px;
-}
 
-.navbar__a:hover {
-  color: #fefefe;
-  cursor: pointer;
-}
 
-.header {
-  background-color: rgb(0, 153, 255);
-  overflow: hidden;
-  padding: 1em 0 1em 0;
-}
 
-.span-head {
-  color: #fff;
-  font-size: 28px;
-  padding-left: 1.5em;
-  font-weight: 800;
-  font-family: 'Josefin Slab', serif;
-}
 
-.mainbio, .mainexp {
-  font-family: 'Prompt', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: center;
-}
 
-.mainbio__img, .mainexp__img {
-  width: 60%;
-  margin-bottom: 20px;
-}
 
-.mainbio__bio, .mainexp__exp {
-  width: 80%;
-}
 
-.mainexp__wraper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 40px;
-  height: 100%;
-  max-height: 300px;
-}
 
-.mainbio__img, .mainexp__img {
-  border-radius: 50%;
-}
-
-.mainexp, .contact {
-  min-height: 100vh;
-}
 
 .contact {
   font-family: 'Prompt', sans-serif;
-}
-
-.contact__h {
-  text-align: center;
-}
-
-.contact__ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
   min-height: 100vh;
+ 
+  &__h {
+    text-align: center;
+  }
+
+  &__ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  &__a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  &__li {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__i {
+    width: 100%;
+    display: inline-block;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
 }
 
-.contact__a {
-  color: black;
-  text-decoration: none;
-  text-align: center;
-}
 
-.contact__li {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  margin-bottom: 30px;
-}
 
-.contact__i {
-  width: 100%;
-  display: inline-block;
-  font-size: 60px;
-  text-align: center;
-  margin-bottom: 5px;
-}
+
+
+
+
+
+
+
 
 @media (min-width: 576px) {
   .mainbio {
       min-height: 100vh;
-  }
-  .mainbio__img, .mainexp__img {
-      width: 60%;
-  }
-  .mainbio__bio {
+      
+    &__bio {
       width: 70%;
+    }
+
+    &__img {
+      width: 60%;
+    }
   }
+  .mainexp{
+    &__img {
+      width: 60%;
+    }
+  }
+  
 }
 
 @media (min-width: 900px) {
@@ -206,23 +226,26 @@ body {
     font-size: 80px;
   }
  
-  .navbar__ul {
+  .navbar{
+  &__ul {
       flex-direction: row;
   }
+}
  
- .contact__h {
-      font-size: 40px;
-      width: 100%;
-      padding-left: 4em;
-      position: absolute;
-      top: 4%;
-      padding: 0;
-      text-align: center
-  }
+ 
  
   .contact {
       position: relative;
       
+      &__h{
+        font-size: 40px;
+        width: 100%;
+        padding-left: 4em;
+        position: absolute;
+        top: 4%;
+        padding: 0;
+        text-align: center
+      }
       &__ul {
         flex-direction: row;
     }

@@ -1,15 +1,5 @@
 
 
-import moment from 'moment';
-import { setInterval } from 'timers';
-
-console.log(moment().format('MMMM Do YYYY, h:mm:ss a'))
-
-const $doc = $(document)
-const $main = $("#navbar")
-const $header = $('.start--js')
-const $mainbio = $('.mainbio--js')
-
 
 $(document).ready(function(){
 $('#navbar').hide();
@@ -25,14 +15,12 @@ $('#navbar').show();
 });
 });
 
-$doc.on('scroll', function () {
-    var scrollPos = $doc.scrollTop(); //jak daleko przewineliśmy
-    var sectionOffset = $main.offset().top; //gdzie jest dany element, na jakiej wysokoscio od początku strony się zaczyna.
-    //console.log(scrollPos);
-    //console.log(sectionOffset);
-
-    if (scrollPos < sectionOffset) {
-      $header.css('opacity', 1 - 1.9 * scrollPos / sectionOffset);
+$(document).on('scroll', function () {
+    let scrollPos = $(document).scrollTop(); 
+    let sectionOffset = $('.navbar--js').offset().top;
+   
+     if (scrollPos < sectionOffset) {
+      $('.start--js').css('opacity', 1 - 1.9 * scrollPos / sectionOffset);
     }
   });
 
