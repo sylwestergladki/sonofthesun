@@ -2,13 +2,13 @@
 
 
 $(document).ready(function(){
-$('#navbar').hide();
-$('#start').on("click",function(){
+$('.navbar--js').hide();
+$('.start__button--js').on("click",function(){
 
-$('#navbar').show();
+$('.navbar--js').show();
    
     $('html, body').animate({
-        scrollTop: $("#navbar").offset().top
+        scrollTop: $('.navbar--js').offset().top
     },1000)
     
    
@@ -67,9 +67,27 @@ $(document).on('scroll', function () {
             });
 
 
+
+
+
+
+
+
+
         
-            
-            
-            
+
+            $(document).ready(function(){
+                
+                $('.scroll').on("click",function(){
+                
+               
+                   
+                    $('html, body').animate({
+                        scrollTop: $(".navbar--js").offset().top
+                    },1000)
+                    
+                   
+                });
+                });
             
             
