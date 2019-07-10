@@ -1,7 +1,7 @@
-#Witaj na moim repozytorium
+# Witaj na moim repozytorium
 [Moje repozytoria](https://github.com/sylwestergladki?tab=repositories)
 
-##Aby odpalić stronę lokalnie ↓
+## Aby odpalić stronę lokalnie ↓
 
 `npm install -g gulp-cli`
 
