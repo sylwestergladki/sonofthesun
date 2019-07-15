@@ -17,6 +17,8 @@ body {
   padding: 0;
 }
 
+
+
 .start {
   background: url(../assets/img/Tymek.jpg);
   height: 100vh;
@@ -32,7 +34,7 @@ body {
     font-family: 'Josefin Slab', serif;
   }
 
-  &__button {
+  &__text {
     border: 1px #ffffff solid;
     height: 50px;
     width: 80px;
@@ -46,6 +48,8 @@ body {
     box-shadow: 1px 1px #fff;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-decoration: none;
   }
 
   &__holder {
@@ -71,7 +75,7 @@ body {
   background-position: 50% 50%;
   z-index: 1;
 
-  &__ul {
+  &__list {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -85,11 +89,11 @@ body {
     overflow: hidden;
   }
 
-  &__li {
+  &__list-item {
     margin: 0 40px;
   }
   
-  &__a {
+  &__option {
     text-decoration: none;
     color: #fff;
     font-family: 'Prompt', sans-serif;
@@ -107,33 +111,20 @@ body {
 
 
 
-.mainbio {
+.main {
   @include mainflex;
-  &__img {
+  &__image {
     width: 60%;
     margin-bottom: 20px;
-  }
-  &__bio {
-    width: 80%;
-  }
-  &__img {
     border-radius: 50%;
   }
+  &__content {
+    width: 80%;
+  }
+ 
 }
 
-.mainexp {
-  @include mainflex;
-  &__img {
-    width: 60%;
-    margin-bottom: 20px;
-  }
-  &__exp {
-    width: 80%;
-  }
-  &__img {
-    border-radius: 50%;
-  }
-}
+
 
 
 
@@ -148,11 +139,11 @@ body {
   font-family: 'Prompt', sans-serif;
   min-height: 100vh;
  
-  &__h {
+  &__header {
     text-align: center;
   }
 
-  &__ul {
+  &__list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -165,13 +156,13 @@ body {
     min-height: 100vh;
   }
 
-  &__a {
+  &__link {
     color: black;
     text-decoration: none;
     text-align: center;
   }
 
-  &__li {
+  &__list-item {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -179,7 +170,7 @@ body {
     margin-bottom: 30px;
   }
 
-  &__i {
+  &__font {
     width: 100%;
     display: inline-block;
     font-size: 60px;
@@ -210,7 +201,7 @@ body {
 
 
 @media (min-width: 576px) {
-  .mainbio {
+  .main {
       min-height: 100vh;
       
     &__bio {
@@ -220,13 +211,7 @@ body {
     &__img {
       width: 60%;
     }
-  }
-  .mainexp{
-    &__img {
-      width: 60%;
-    }
-  }
-  
+  }  
 }
 
 @media (min-width: 900px) {
@@ -235,17 +220,17 @@ body {
   }
  
   .navbar{
-  &__ul {
+  &__list {
       flex-direction: row;
   }
-}
+  }
  
  
  
   .contact {
       position: relative;
       
-      &__h{
+      &__header{
         font-size: 40px;
         width: 100%;
         padding-left: 4em;
@@ -254,13 +239,13 @@ body {
         padding: 0;
         text-align: center
       }
-      &__ul {
+      &__list {
         flex-direction: row;
     }
-    &__i {
+    &__font {
         font-size: 80px;
     }
-    &__li {
+    &__list-item {
         font-size: 20px;
     }
   }
@@ -270,17 +255,17 @@ body {
 
   
 
-  .mainbio{
+  .main--first{
     display: grid;
     grid-template-areas: ". ."
-                         "image head"
-                         "image content"
+                         "photo head"
+                         "photo text"
                          ". .";
     grid-template-columns: 0.8fr 1fr;
     grid-template-rows: 1fr 80px 280px 1fr;
 
-    &__bio{
-      grid-area: content; 
+    &__content{
+      grid-area: text; 
       max-height: 350px;
       width: 90%;
       margin: 0;
@@ -290,7 +275,7 @@ body {
       line-height: 2;
     }
 
-    &__h{
+    &__header{
       grid-area: head;
       margin: 0;
       text-align: left;
@@ -298,8 +283,8 @@ body {
       font-size: 48px;
     }
   
-    &__img{
-      grid-area: image;
+    &__image{
+      grid-area: photo;
       display: inline-block;
       height: 100%;
       width: auto;
@@ -307,7 +292,8 @@ body {
       max-height:360px;
     }
   }
-    .mainexp{
+
+    .main--second{
       display: grid;
       grid-template-areas: ". ."
                            "head image"
@@ -316,7 +302,7 @@ body {
       grid-template-columns: 1fr 0.8fr;
       grid-template-rows: 1fr 100px 260px 1fr;
   
-      &__exp{
+      &__content{
         grid-area: content; 
       max-height: 350px;
       width: 80%;
@@ -330,7 +316,7 @@ body {
       margin-bottom: auto;
       }
   
-      &__h{
+      &__header{
         grid-area: head;
       margin: 0;
       text-align: right;
@@ -338,7 +324,7 @@ body {
       font-size: 48px;
       }
     
-      &__img{
+      &__image{
         grid-area: image;
       display: inline-block;
       height: 100%;
@@ -348,8 +334,4 @@ body {
       }
   }
 
-  
-
-  
 }
-

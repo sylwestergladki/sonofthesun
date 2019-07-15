@@ -1,7 +1,4 @@
-# Witaj na moim repozytorium
-[Moje repozytoria](https://github.com/sylwestergladki?tab=repositories)
-
-## Jak odpalić stronę lokalnie ↓
+# wtf-gulp-starter
 
 `npm install -g gulp-cli`
 
