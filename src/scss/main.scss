@@ -121,8 +121,35 @@ body {
   &__content {
     width: 80%;
   }
+}
+
+.main--js{
+  display: none;
+  background-color: #fff;
+}
+.main--animation{
+  display: block;
+  z-index: 2;
+  position: absolute;
+  animation: slide .5s linear forwards;
+  
  
 }
+
+.start--animation{
+  animation: opacityslide .5s linear forwards;
+}
+
+@keyframes slide {
+  0%{top:100%;}
+  100%{top: 0;}
+}
+
+@keyframes opacityslide{
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
 
 
 

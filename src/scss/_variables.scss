@@ -7,3 +7,13 @@
   align-items: center;
   min-height: 100vh;
 }
+
+@keyframes slide {
+  0%{top:100%;}
+  100%{top: 0;}
+}
+
+@keyframes opacityslide{
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
