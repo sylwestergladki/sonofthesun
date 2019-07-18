@@ -392,45 +392,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center; }
 
-.navbar {
-  min-height: 100vh;
-  background: url(../assets/img/Tymeknav.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
-  z-index: 1; }
-  .navbar__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: auto;
-    padding: 0 3em 0 3em;
-    list-style-type: none;
-    min-height: 100vh;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
-    font-size: 28px;
-    overflow: hidden; }
-  .navbar__list-item {
-    margin: 0 40px; }
-  .navbar__option {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Prompt', sans-serif;
-    font-weight: 600;
-    text-shadow: 2px 2px #000;
-    max-height: 200px; }
-    .navbar__option:hover {
-      color: #fefefe; }
-
 .main {
   font-family: 'Prompt', sans-serif;
   display: -webkit-box;
@@ -448,13 +409,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh; }
+  min-height: 100vh;
+  position: relative; }
   .main__image {
     width: 60%;
     margin-bottom: 20px;
     border-radius: 50%; }
   .main__content {
-    width: 80%; }
+    width: 80%;
+    line-height: 2; }
 
 .main--js {
   display: none;
@@ -657,5 +620,58 @@ body {
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
     -ms-grid-column: 2; } }
+
+.zoom-photo {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  -o-transition: transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  -webkit-animation: zoom .3s linear forwards;
+          animation: zoom .3s linear forwards;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%); }
+
+.photo-zoom, .photo-zoom-second {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 6;
+  width: 100%;
+  height: 100vh;
+  background-color: #000; }
+  .photo-zoom__image, .photo-zoom-second__image {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+    padding: 10px;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain; }
+
+.photo-zoom--visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: zoom .4s linear forwards;
+          animation: zoom .4s linear forwards; }
+
+.scroll-off {
+  overflow: hidden; }
+
+@-webkit-keyframes zoom {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes zoom {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=main.css.map */
