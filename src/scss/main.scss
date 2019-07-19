@@ -17,8 +17,6 @@ body {
   padding: 0;
 }
 
-
-
 .start {
   background: url(../assets/img/Tymek.jpg);
   height: 100vh;
@@ -50,6 +48,9 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+      &:hover{
+        animation: bounce 1s;
+      }
   }
 
   &__holder {
@@ -60,17 +61,10 @@ body {
     justify-content: center;
   }
 
+  &--animation{
+    animation: opacityslide .5s linear forwards;
+  }
 }
-
-
-
-
-
-
-
-
-
-
 
 .main {
   @include mainflex;
@@ -85,7 +79,7 @@ body {
   }
 }
 
-.main--js{
+.tile{
   display: none;
   background-color: #fff;
 }
@@ -97,24 +91,6 @@ body {
   
  
 }
-
-.start--animation{
-  animation: opacityslide .5s linear forwards;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .contact {
   font-family: 'Prompt', sans-serif;
@@ -162,24 +138,38 @@ body {
 }
 
 
-.bottom-wraper{
-  position: fixed;
-  bottom: 10px;
-  width: 100%;
-  padding: 20px 20px;
-  text-align: right;
-  z-index: 2;
 
 
-  
+.zoom-photo{
+
+  transition: transform .2s;
+  animation: zoom .3s linear forwards;
+  transform: translateY(50%);
 }
 
+.photo-zoom, .photo-zoom-second{
+  position: fixed;
+  top:0;
+  overflow: hidden;
+  display: none;
+  z-index: 6;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  &__image{
+    justify-content: center;
+    max-width:100%;
+    padding: 10px;
+    height: auto;
+    object-fit: contain;
 
+  }
+}
 
-
-
-
-
+.photo-zoom--visible{
+  display: flex;
+  animation: zoom .4s linear forwards;
+}
 
 @media (min-width: 576px) {
   .main {
@@ -317,47 +307,8 @@ body {
 
 }
 
-.zoom-photo{
-
-  transition: transform .2s;
-  animation: zoom .3s linear forwards;
-  transform: translateY(50%);
-}
-
-.photo-zoom, .photo-zoom-second{
-  position: fixed;
-  top:0;
-  overflow: hidden;
-  display: none;
-  z-index: 6;
-  width: 100%;
-  height: 100vh;
-  background-color: #000;
-  &__image{
-    justify-content: center;
-    max-width:100%;
-    padding: 10px;
-    height: auto;
-    object-fit: contain;
-
-  }
-}
-
-.photo-zoom--visible{
-  display: flex;
-  animation: zoom .4s linear forwards;
-}
-
-.scroll-off{
-  overflow: hidden;
-}
 
 
 
 
-@keyframes zoom{
-  0%{opacity: 0;}
-  100%{
-    opacity: 1;
-  }
-}
+

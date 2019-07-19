@@ -1,7 +1,7 @@
 import { brotliDecompressSync } from "zlib";
 
 const startbutton = document.querySelector('.start__button--js');
-const main = document.querySelector('.main--js');
+const main = document.querySelector('.tile--js');
 const startMain = document.querySelector('.start');
 
 
