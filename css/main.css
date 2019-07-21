@@ -511,12 +511,60 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 30px; }
+    .contact__list-item--phone:hover {
+      -webkit-transition: all 300ms ease-in;
+      -o-transition: all 300ms ease-in;
+      transition: all 300ms ease-in;
+      -webkit-transform: scale(1.4);
+          -ms-transform: scale(1.4);
+              transform: scale(1.4); }
+    .contact__list-item--mail:hover {
+      -webkit-transition: all 300ms ease-in;
+      -o-transition: all 300ms ease-in;
+      transition: all 300ms ease-in;
+      -webkit-transform: scale(1.4);
+          -ms-transform: scale(1.4);
+              transform: scale(1.4); }
+    .contact__list-item--insta:hover {
+      -webkit-transition: all 300ms ease-in;
+      -o-transition: all 300ms ease-in;
+      transition: all 300ms ease-in;
+      -webkit-transform: scale(1.4);
+          -ms-transform: scale(1.4);
+              transform: scale(1.4); }
+    .contact__list-item--fb:hover {
+      -webkit-transition: all 300ms ease-in;
+      -o-transition: all 300ms ease-in;
+      transition: all 300ms ease-in;
+      -webkit-transform: scale(1.4);
+          -ms-transform: scale(1.4);
+              transform: scale(1.4); }
   .contact__font {
     width: 100%;
     display: inline-block;
     font-size: 60px;
     text-align: center;
     margin-bottom: 5px; }
+    .contact__font--phone:hover {
+      color: #32CD32;
+      -webkit-transition: color 300ms ease-in;
+      -o-transition: color 300ms ease-in;
+      transition: color 300ms ease-in; }
+    .contact__font--mail:hover {
+      color: #b23121;
+      -webkit-transition: color 300ms ease-in;
+      -o-transition: color 300ms ease-in;
+      transition: color 300ms ease-in; }
+    .contact__font--insta:hover {
+      color: #bc2a8d;
+      -webkit-transition: color 300ms ease-in;
+      -o-transition: color 300ms ease-in;
+      transition: color 300ms ease-in; }
+    .contact__font--fb:hover {
+      color: #3b5998;
+      -webkit-transition: color 300ms ease-in;
+      -o-transition: color 300ms ease-in;
+      transition: color 300ms ease-in; }
 
 .zoom-photo {
   -webkit-transition: -webkit-transform .2s;
