@@ -72,6 +72,7 @@ body {
     width: 60%;
     margin-bottom: 20px;
     border-radius: 50%;
+    cursor: pointer;
   }
   &__content {
     width: 80%;
@@ -190,10 +191,11 @@ body {
   background-color: #000;
   &__image{
     justify-content: center;
-    max-width:100%;
+    width:100%;
     padding: 10px;
     height: auto;
     object-fit: contain;
+    cursor: pointer;
 
   }
 }
