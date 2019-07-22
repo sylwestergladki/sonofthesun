@@ -182,8 +182,8 @@ body {
 .photo-zoom, .photo-zoom-second{
   position: fixed;
   top:0;
-  overflow: hidden;
   display: none;
+  opacity: 0;
   z-index: 6;
   width: 100%;
   height: 100vh;
