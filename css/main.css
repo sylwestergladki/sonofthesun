@@ -454,7 +454,8 @@ body {
   .main__image {
     width: 60%;
     margin-bottom: 20px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    cursor: pointer; }
   .main__content {
     width: 80%;
     line-height: 2; }
@@ -591,11 +592,12 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    max-width: 100%;
+    width: 100%;
     padding: 10px;
     height: auto;
     -o-object-fit: contain;
-       object-fit: contain; }
+       object-fit: contain;
+    cursor: pointer; }
 
 .photo-zoom--visible {
   display: -webkit-box;
