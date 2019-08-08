@@ -12,4 +12,3 @@ This site is business card my good friend Tymoteusz.
 
 `gulp`
 
-To publish your page using github pages use `npm run deploy`
