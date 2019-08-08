@@ -714,6 +714,7 @@ body {
       margin: auto;
       max-height: 360px; }
   .main--second {
+    margin-bottom: 150px;
     display: -ms-grid;
     display: grid;
         grid-template-areas: ". ." "head image" "content image" ". .";
@@ -746,8 +747,16 @@ body {
       width: auto;
       margin: auto;
       max-height: 360px; }
+  .contact {
+    min-height: 100vh; }
+  .video {
+    margin-bottom: 70px; }
+    .video__header {
+      font-size: 48px; }
   .wraper {
-    max-height: 80vh; } }
+    max-height: 80vh; }
+    .wraper__iframe {
+      max-height: 500px; } }
 
 @media (min-width: 900px) {
   .main--first__content {
