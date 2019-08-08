@@ -336,6 +336,7 @@ body {
   }
 
     .main--second{
+      margin-bottom: 150px;
       display: grid;
       grid-template-areas: ". ."
                            "head image"
@@ -376,8 +377,21 @@ body {
       }
   }
 
+  .contact{
+    min-height: 100vh;
+  }
+
+  .video{
+    margin-bottom: 70px;
+    &__header{
+      font-size:48px;
+    }
+  }
  .wraper{
   max-height: 80vh;
+  &__iframe{
+    max-height:500px;
+  }
  }
 
 }
