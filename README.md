@@ -1,4 +1,4 @@
-# wtf-gulp-starter
+## How to open this site on your desktop?
 
 `npm install -g gulp-cli`
 
