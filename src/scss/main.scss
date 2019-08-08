@@ -93,7 +93,14 @@ body {
 
 .video{
   max-height: 100%;
+  font-family: 'Prompt', sans-serif;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 15vh;
+    
 }
 
 .wraper{
