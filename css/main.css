@@ -652,7 +652,7 @@ body {
     .main__img {
       width: 60%; } }
 
-@media (min-width: 900px) {
+@media (min-width: 985px) {
   .start__logo {
     font-size: 80px; }
   .navbar__list {
@@ -758,7 +758,7 @@ body {
     .wraper__iframe {
       max-height: 500px; } }
 
-@media (min-width: 900px) {
+@media (min-width: 985px) {
   .main--first__content {
     -ms-grid-row: 3;
     -ms-grid-column: 2; }
