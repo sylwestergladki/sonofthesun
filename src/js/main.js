@@ -12,24 +12,24 @@ startbutton.addEventListener('click', (e) =>{
 
 const photoFirst = document.querySelector('.main__image--js');
 const zoomPhotoFirst = document.querySelector('.photo-zoom');
-const bigPhotoFirst = document.querySelector('.photo-zoom__image--js')
+const exitZoom = document.querySelector('.photo-zoom__exit--js');
 
 photoFirst.addEventListener('click', (e) =>{
     zoomPhotoFirst.classList.add('photo-zoom--visible');
 });
 
-bigPhotoFirst.addEventListener('click', (e) =>{
+exitZoom.addEventListener('click', (e) =>{
     zoomPhotoFirst.classList.remove('photo-zoom--visible');
 });
 
 const photoSecond = document.querySelector('.main-second__image--js');
 const zoomPhotoSecond = document.querySelector('.photo-zoom-second');
-const bigPhotoSecond = document.querySelector('.photo-zoom-second__image--js');
+const exitZoomSecond = document.querySelector('.photo-zoom-second__exit--js');
 
 photoSecond.addEventListener('click', (e) =>{
     zoomPhotoSecond.classList.add('photo-zoom--visible');
 });
 
-bigPhotoSecond.addEventListener('click', (e) =>{
+exitZoomSecond.addEventListener('click', (e) =>{
     zoomPhotoSecond.classList.remove('photo-zoom--visible');
 });

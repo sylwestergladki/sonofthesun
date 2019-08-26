@@ -7,6 +7,48 @@
   align-items: center;
   position: relative;
 }
+@mixin exit{
+  &__exit{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    padding: 20px;
+
+  &:hover{
+    background-color: #b23121;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  &:before {
+    position: absolute;
+    left: 19px;
+    top: 5px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #fff;
+
+  }
+  &:after {
+    position: absolute;
+    top: 5px;
+    left: 19px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #fff;
+  }
+    &:before {
+    transform: rotate(45deg);
+  }
+    &:after {
+    transform: rotate(-45deg);
+  }
+}
+}
 
 @keyframes slide {
   0%{top:100%;}

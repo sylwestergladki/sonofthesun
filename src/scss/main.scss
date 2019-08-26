@@ -215,6 +215,8 @@ body {
   transition: transform .2s;
   animation: zoom .3s linear forwards;
   transform: translateY(50%);
+
+
 }
 
 .photo-zoom, .photo-zoom-second{
@@ -226,15 +228,24 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #000;
+  @include exit;
+  &__wraper{
+    width:100%;
+    height:100%;
+    display: flex;
+    position: relative;
+  }
   &__image{
     justify-content: center;
     width:100%;
     padding: 10px;
     height: auto;
     object-fit: contain;
-    cursor: pointer;
-
   }
+  
+   
+
+    
 }
 
 .photo-zoom--visible{
