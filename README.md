@@ -17,5 +17,5 @@ I made this site for my friend Tymoteusz Mikołajczyk who is the artist.
 
 `gulp`
 
-To publish your page using github pages use `npm run deploy`
+
 
