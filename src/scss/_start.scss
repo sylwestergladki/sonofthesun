@@ -1,0 +1,49 @@
+.start {
+    background: url(../assets/img/Tymek.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+  
+    &__logo {
+      text-align: center;
+      margin-top: 60px;
+      text-shadow: 1px 1px #fff;
+      font-size: 45px;
+      font-family: 'Josefin Slab', serif;
+    }
+  
+    &__text {
+      border: 1px #ffffff solid;
+      height: 50px;
+      width: 80px;
+      margin: 0 auto;
+      background: black;
+      opacity: 0.7;
+      color: #fff;
+      font-family: 'Josefin Slab', serif;
+      border-radius: 2px;
+      font-size: 24px;
+      box-shadow: 1px 1px #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+        &:hover{
+          animation: bounce 1s;
+        }
+    }
+  
+    &__holder {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    &--animation{
+      animation: opacityslide .5s linear forwards;
+    }
+  }
+  

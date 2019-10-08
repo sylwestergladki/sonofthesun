@@ -1,0 +1,30 @@
+.main {
+    @include mainflex;
+    &__image {
+      width: 60%;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      cursor: pointer;                       
+    }
+    &__content {
+      width: 80%;
+      line-height: 2;
+    }
+  }
+  .main--first{
+    min-height:100vh;
+  }
+  .main--second{
+    min-height: none;
+  }
+  
+  .tile{
+    display: none;
+    background-color: #fff;
+  }
+  .main--animation{
+    display: block;
+    z-index: 2;
+    position: absolute;
+    animation: slide .5s linear forwards;
+  }

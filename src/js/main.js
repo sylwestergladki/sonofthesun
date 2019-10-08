@@ -1,5 +1,7 @@
 import { brotliDecompressSync } from "zlib";
 
+//start animation
+
 const startbutton = document.querySelector('.start__button--js');
 const main = document.querySelector('.tile--js');
 const startMain = document.querySelector('.start');
@@ -9,6 +11,9 @@ startbutton.addEventListener('click', (e) =>{
     main.classList.toggle('main--animation');
     startMain.classList.toggle('start--animation');
 });
+
+
+//Zoom for first photo
 
 const photoFirst = document.querySelector('.main__image--js');
 const zoomPhotoFirst = document.querySelector('.photo-zoom');
@@ -21,6 +26,8 @@ photoFirst.addEventListener('click', (e) =>{
 exitZoom.addEventListener('click', (e) =>{
     zoomPhotoFirst.classList.remove('photo-zoom--visible');
 });
+
+//Zoom for second photo
 
 const photoSecond = document.querySelector('.main-second__image--js');
 const zoomPhotoSecond = document.querySelector('.photo-zoom-second');

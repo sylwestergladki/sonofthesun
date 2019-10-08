@@ -1,0 +1,141 @@
+@media (min-width: 576px) {
+    .main {
+        min-height: 100vh;
+        
+      &__bio {
+        width: 70%;
+      }
+  
+      &__img {
+        width: 60%;
+      }
+    }  
+  }
+  
+@media (min-width: 985px) {
+    .start__logo{
+      font-size: 80px;
+    }
+   
+    .navbar{
+    &__list {
+        flex-direction: row;
+    }
+    }
+    
+    .contact {
+        position: relative;
+        &__header{
+          font-size: 40px;
+          width: 100%;
+          padding-left: 4em;
+          position: absolute;
+          top: 4%;
+          padding: 0;
+          text-align: center
+        }
+        &__list {
+          flex-direction: row;
+        }
+        &__font {
+          font-size: 80px;
+        }
+        &__list-item {
+          font-size: 20px;
+        }
+    }
+    
+    .main--first{
+    display: grid;
+    grid-template-areas: ". ."
+                           "photo head"
+                           "photo text"
+                           ". .";
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 1fr 80px 280px 1fr;
+        &__content{
+        grid-area: text; 
+        max-height: 350px;
+        width: 90%;
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-start;
+        line-height: 2;
+      }
+  
+      &__header{
+        grid-area: head;
+        margin: 0;
+        text-align: left;
+        padding-left: 80px;
+        font-size: 48px;
+      }
+    
+      &__image{
+        grid-area: photo;
+        display: inline-block;
+        height: 100%;
+        width: auto;
+        margin: auto;
+        max-height:360px;
+      }
+    }
+  
+    .main--second{
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-areas: ". ."
+                             "head image"
+                             "content image"
+                             ". .";
+    grid-template-columns: 1fr 0.8fr;
+    grid-template-rows: 1fr 100px 260px 1fr;
+    
+        &__content{
+            grid-area: content; 
+            max-height: 350px;
+            width: 80%;
+            margin: 0;
+            overflow: hidden;
+            text-align: right;
+            text-justify: center;
+            line-height: 2;
+            min-height: 200px;
+            margin-left: auto;
+            margin-bottom: auto;
+        }
+        
+        &__header{
+            grid-area: head;
+            margin: 0;
+            text-align: right;
+            padding-right: 80px;
+            font-size: 48px;
+        }
+        
+        &__image{
+            grid-area: image;
+            display: inline-block;
+            height: 100%;
+            width: auto;
+            margin: auto;
+            max-height:360px;
+        }
+    }
+  
+    .video{
+      min-height: 300px;
+      margin-bottom: 70px;
+        &__header{
+            font-size:48px;
+        }
+    }
+   .wraper{
+    max-height: 80vh;
+        &__iframe{
+        max-height:500px;
+        }
+    }
+}
+  

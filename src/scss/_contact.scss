@@ -1,0 +1,76 @@
+.contact {
+    font-family: 'Prompt', sans-serif;
+    min-height: 100vh;
+   
+    &__header {
+      text-align: center;
+    }
+  
+    &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-content: center;
+      align-items: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100vh;
+    }
+  
+    &__link {
+      color: black;
+      text-decoration: none;
+      text-align: center;
+    }
+  
+    &__list-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      &--phone:hover{
+        transition: all 300ms ease-in;
+        transform: scale(1.4);
+      }
+      &--mail:hover{
+        transition: all 300ms ease-in;
+        transform: scale(1.4);
+      }
+      &--insta:hover{
+        transition: all 300ms ease-in;
+        transform: scale(1.4);
+      }
+      &--fb:hover{
+        transition: all 300ms ease-in;
+        transform: scale(1.4);
+      }
+    }
+  
+    &__font {
+      width: 100%;
+      display: inline-block;
+      font-size: 60px;
+      text-align: center;
+      margin-bottom: 5px;
+      &--phone:hover{
+        color: #32CD32;
+        transition: color 300ms ease-in;
+      }
+      &--mail:hover{
+        color: #b23121;
+        transition: color 300ms ease-in;
+      }
+      &--insta:hover{
+        color: #bc2a8d ;
+        transition: color 300ms ease-in;
+      }
+      &--fb:hover{
+        color: #3b5998;
+        transition: color 300ms ease-in;
+      }
+    }
+    
+  }
